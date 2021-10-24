@@ -74,3 +74,19 @@ const logingoogle=()=>{
     })
 
     }
+
+
+    
+
+var provider1 = new firebase.auth.FacebookAuthProvider();
+
+const loginfacebook=()=>{
+    firebase.auth().signInWithPopup(provider1)
+    .then((result) => {
+        console.log(result)
+    })
+    .catch((err)=>{
+        console.log(err)
+    })
+
+    }
